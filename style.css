@@ -1,0 +1,501 @@
+@import 'utility.css';
+
+:root{
+    --Primary:#3DCFD3;
+    --Dark:black;
+    --Pure:#FFFFFF;
+    --Ternary:#898989;
+    --Light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing:antialiased;
+}
+header{
+    background: var(--Dark);
+    height:800px;
+    clip-path: polygon(0 0 ,100% 0 , 100% 100% , 70% 95% , 0 100% );
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+header nav .left a{
+    color:  var(--Pure);
+    text-decoration: none;
+    margin-right: 5rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav {
+    padding:2rem 0;
+}
+
+header nav .branding{
+    margin-right:3rem;
+}
+header nav .left a:hover{
+    color:var(--Primary);
+}
+.hero .left img{
+    width : 400px;
+    height: 550px;
+}
+.hero .right{
+    color:var(--Pure);
+}
+.hero .right h5{
+    font-size: 1.6rem;
+    color:var(--Primary);
+    margin-bottom: 0.6rem;
+    
+}
+.hero .right h2{
+    font-size:4rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero{
+    padding: 3rem 0 rem;
+}
+section{
+    padding: 6rem;
+}
+section.about.about-me-img{
+    height:450px;
+}
+section.about h1{
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--Primary);
+}
+section.about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    color:grey;
+}
+
+.branding img{
+    width: 105px;
+    height:105px;
+    
+}
+.branding-mob img{
+    width: 105px;
+    height:105px;
+    display: none;
+}
+section.about .Social{
+    display: flex;
+}
+section.about .Social a{
+    /* background: var(--Dark);  */
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    margin:0.5rem;
+}
+section.about .Social a img{
+    
+    width:180%;
+    height:180%;
+    padding: 0.6rem;
+}
+section.about .social a:hover{
+    color:var(--Primary);
+}
+.mbottom1{
+    margin-bottom: 1.5rem;
+}
+.about-me-img{
+    width:450px;
+    height:500px;
+}
+
+.Section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.Section-heading + p{
+    color:var(--Ternary);
+    font-family: sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+.Section-heading span{
+    color:var(--Primary)
+}
+section.Socials .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:2rem;
+    grid-row-gap: 6rem;
+}
+section.Socials{
+    background: var(--Light);
+}
+section.Socials .card-wrapper .card{
+    background: var(--Pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.Socials .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translate(-50%);
+    width:110px;
+    height:115px;
+}
+section.Socials .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.Socials .card-wrapper .card p{
+    font-family: 'Lato' , sans-serif;
+    color:var(--Ternary);
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+section.Socials .card-wrapper .card:hover{
+    background: var(--Dark);
+}
+section.Socials .card-wrapper .card:hover h2, section.Services .card-wrapper .card:hover p{
+    color: var(--Pure);
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+
+}
+section.contact .card-wrapper .card img{
+    height:140px;
+    width:140px;
+    margin-top: -5.5rem;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--Ternary);
+    font-weight: 450;
+    margin-bottom: 3rem;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact input{
+    padding: 0.5rem ;
+    border:1px solid var(--Light);
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border:1px solid var(--Light);
+    font-size: 0.9rem;
+    
+}
+section.contact input:focus , section.contact textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--Dark);
+    text-align: center;
+    padding:5rem 0;
+}
+footer img{
+    width:200px;
+    height:200px;
+}
+footer .footer-social a img{
+    width: 50px;
+    height:50px;
+    filter: invert(100%);
+    
+}
+footer h3{
+  text-align: center;
+  color:var(--Ternary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+}
+footer h4{
+    text-align: center;
+    color:var(--Ternary);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  
+  }
+  @media (max-width:1024px){
+      header #main-nav{
+          display: none;
+      }
+  }
+  .hamberger img{
+      width:50px;
+      height:50px;
+
+  }
+  .site-main-wrapper{
+      position: relative;
+  }
+  .hamberger{
+    position: absolute;
+    top: 40px;
+    right:40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    
+  }
+  .margin1{
+      margin-top: 5rem;
+  }
+  .margin2 button{
+      margin-right: 2rem;
+  }
+  .mobile-nav{
+      position: fixed;
+      top:0;
+      left:0;
+      z-index: 1001;
+      background: var(--Light);
+      width:100%;
+      height: 40%;
+      padding:2rem;
+      padding-top: 5rem;
+      transform: translateX(-100%);
+      transition: all 0.5s ease-in-out;
+      
+  }
+  .open{
+      transform: translateX(0%);
+  }
+
+  
+  .times{
+      position: fixed;
+      top:30px;
+      right:30px;
+      border:none;
+      outline:none;
+      cursor: pointer;
+  }
+  .times img{
+      width:50px;
+      height: 50px;
+  }
+  .mobile-nav ul{
+      list-style-type: none;
+
+  }
+  .mobile-nav ul li a{
+      color:var(--secondary);
+      text-decoration: none;
+      font-size: 1.5rem;
+  }
+  
+  @media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+    /* .branding-mob img{
+        width: 105px;
+        height:105px;
+        display: block;
+    } */
+    .hero{
+        flex-direction: column;
+    }
+    .hero .left img{
+        width:250px;
+        height:500px;
+
+    }
+    .hero .right{
+        position:absolute;
+        top:100px;
+        padding:0 1.5rem;
+    }
+    header{
+    clip-path: polygon(0 0 ,100% 0 , 100% 100% , 80% 96% , 0 100% );
+    }
+    .hero .left img{
+        width:260px;
+        height:600px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top: 7rem;
+    }
+    .about-me-img {
+        width: 231px;
+        height: 419px;
+    }
+    section.Socials .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 6rem;
+    }
+}
+@media(max-width:576px)
+{
+    .hero{
+        flex-direction: column;
+    }
+    .hero .left img{
+        width:250px;
+        height:500px;
+
+    }
+    /* .left .branding-mob img{
+        width: 105px;
+        height:105px;
+        display: block;
+    } */
+    .hero .right{
+        position:absolute;
+        top:100px;
+        padding:0 1.5rem;
+    }
+    header{
+    clip-path: polygon(0 0 ,100% 0 , 100% 100% , 80% 96% , 0 100% );
+    }
+    body{
+        width:680px;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about-inner-wrap img{
+        width:500px;
+        height:280px;
+    }
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .right .Social{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .mbottom1 {
+        margin-bottom: 1.5rem;
+        line-height: 1.5rem;
+    }
+    section.Socials .card-wrapper {
+     
+        grid-template-columns: 1fr;
+        
+    }
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 2rem;
+
+}
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease  forwards;
+}
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
