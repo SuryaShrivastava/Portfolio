@@ -413,6 +413,12 @@ footer h4{
         grid-column-gap: 2rem;
         grid-row-gap: 6rem;
     }
+    .error {
+        text-align: center;
+        background-color: red;
+        width: fit-content;
+        height: fit-content;
+    }
 }
 @media(max-width:576px)
 {
@@ -423,6 +429,12 @@ footer h4{
         width:250px;
         height:500px;
 
+    }
+    .error {
+        text-align: center;
+        background-color: red;
+        width: fit-content;
+        height: fit-content;
     }
     /* .left .branding-mob img{
         width: 105px;
@@ -499,3 +511,21 @@ footer h4{
     }
 }
 
+.error{
+    text-align: center;
+    background-color:red;
+}
+.error h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.error button{
+    margin-top: 2rem;
+    
+}
+.error img{
+    margin-top: 3rem;
+    width: 960px;
+    height: 600px;
+}
